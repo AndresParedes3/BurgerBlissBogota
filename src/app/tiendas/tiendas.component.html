@@ -1,0 +1,26 @@
+<div class="base-nav">
+  <div class="nav-title">Burger Bliss Bogotá</div>
+  <div class="nav-items">
+    <div class="inicio">Inicio</div>
+  </div>
+  <div class="nav-items">
+    <div class="lugares">Lugares</div>
+  </div>
+  <div class="nav-items2">
+    <div class="categorias">Categorias</div>
+  </div>
+</div>
+
+<h1>¡Bienvenidos!</h1>
+<div class="card-group">
+  <div *ngFor="let hamburgueseria of hamburgueserias" class="card">
+    <img class="card-img-top" [src]="hamburgueseria.imagen" alt="{{ hamburgueseria.nombre }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ hamburgueseria.nombre }}</h5>
+      <p class="card-text">{{ hamburgueseria.comentario }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
